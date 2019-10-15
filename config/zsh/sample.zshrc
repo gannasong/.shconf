@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -17,7 +19,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs status vi_mode)
 # 右側
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time status ram virtualenv docker_machine)
 # 若當前登入的帳號為你的帳號 xxx，就不用特別顯示出來
-DEFAULT_USER="gannasong"
+DEFAULT_USER="miguel"
 # 使用 nerd font 時可以顯示更多 icon。詳情請參考 powerlevel9k wiki 
 POWERLEVEL9K_MODE='nerdfont-complete'
 
