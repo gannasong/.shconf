@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.rbenv/bin:$PATH"
+export GPG_TTY=$(tty)
 eval "$(rbenv init -)"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
