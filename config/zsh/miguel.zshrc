@@ -3,8 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-export PATH="$HOME/.rbenv/bin:$PATH"
 export GPG_TTY=$(tty)
+export GITHUB_SUBMODULES_USER="1b0588cc77e099e8e564d45c9d9d73a7b278d8cf"
+export FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD='vwfh-bxcg-jyfr-kvra'
 eval "$(rbenv init -)"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
