@@ -3,8 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export PATH="/usr/local/sbin:$PATH"
 export GPG_TTY=$(tty)
-export GITHUB_SUBMODULES_USER="1b0588cc77e099e8e564d45c9d9d73a7b278d8cf"
+export GITHUB_SUBMODULES_USER="6f4d2f7f1edfa903255de79f31c46a33d6e636bc"
 export FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD='vwfh-bxcg-jyfr-kvra'
 eval "$(rbenv init -)"
 
@@ -13,7 +14,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # 左側
