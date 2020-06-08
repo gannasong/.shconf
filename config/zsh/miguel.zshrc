@@ -22,7 +22,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs status vi_mode)
 # 右側
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time status ram virtualenv docker_machine)
 # 若當前登入的帳號為你的帳號 xxx，就不用特別顯示出來
-DEFAULT_USER="miguel"
+DEFAULT_USER="gannasong"
 # 使用 nerd font 時可以顯示更多 icon。詳情請參考 powerlevel9k wiki 
 POWERLEVEL9K_MODE='nerdfont-complete'
 
@@ -105,6 +105,9 @@ export LANG=en_US.UTF-8
 alias l='ls -lh'
 alias ll='ls -alh'
 alias la='ls -a'
+alias pi='pod install'
+# 查看哪些 pods 可以升級
+alias po='pod outdated' 
 
 # zsh-autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
