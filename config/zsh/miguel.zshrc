@@ -5,9 +5,15 @@
 export ZSH=$HOME/.oh-my-zsh
 export PATH="/usr/local/sbin:$PATH"
 export GPG_TTY=$(tty)
-export GITHUB_SUBMODULES_USER="6f4d2f7f1edfa903255de79f31c46a33d6e636bc"
+export GITHUB_SUBMODULES_USER="734a4b5998eb46825528aab58a4b1214b392e8cc"
 export FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD='vwfh-bxcg-jyfr-kvra'
-eval "$(rbenv init -)"
+export RUBYOPT=-W0
+# eval "$(rbenv init -)"
+
+export PATH="/Users/miguel/.pyenv/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -22,7 +28,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs status vi_mode)
 # 右側
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time status ram virtualenv docker_machine)
 # 若當前登入的帳號為你的帳號 xxx，就不用特別顯示出來
-DEFAULT_USER="gannasong"
+DEFAULT_USER="Miguel"
 # 使用 nerd font 時可以顯示更多 icon。詳情請參考 powerlevel9k wiki 
 POWERLEVEL9K_MODE='nerdfont-complete'
 
